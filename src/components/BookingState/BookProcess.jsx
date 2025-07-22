@@ -107,7 +107,7 @@ function BookProcess() {
 
     try {
       setLoading1(true);
-      const url = "https://jepairbackend.vercel.app/jepairbazaar/mobileotp";
+      const url = "https://jepairbackend.onrender.com/jepairbazaar/mobileotp";
       const response = await fetch(url, {
         method: "POST",
         headers: {
