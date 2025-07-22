@@ -3,6 +3,7 @@ import axios from "axios";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { BiSolidSend } from "react-icons/bi";
 import { ImAndroid } from "react-icons/im";
+const KEY = import.meta.env.GEMINI_KEY;
 
 function JepairBot() {
   const [question, setQuestion] = useState("");
@@ -164,7 +165,7 @@ function JepairBot() {
         return;
       } else {
         const response = await axios.post(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCU4FtZ3D4nFUh_BDy15QE1vKY5kCuY27M`,
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${KEY}`,
           {
             contents: [{ parts: [{ text: question }] }],
           }
