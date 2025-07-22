@@ -35,7 +35,7 @@ function Emailotp() {
     }
     try {
       setLoading(true); // Start loader
-      const url = "https://jepairbackend.vercel.app/jepairbazaar/enquiry/verify";
+      const url = "https://jepairbackend.onrender.com/jepairbazaar/enquiry/verify";
       const response = await fetch(url, {
         method: "POST",
         headers: {
