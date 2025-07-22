@@ -37,7 +37,7 @@ function Login() {
     }
     try {
       setLoading(true); // Start loader
-      const url = "http://localhost:3000/jepairbazaar/enquiry";
+      const url = "https://jepairbackend.vercel.app/jepairbazaar/enquiry";
       const response = await fetch(url, {
         method: "POST",
         headers: {
