@@ -7,7 +7,7 @@ function AdminUsers() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/jepairbazaar/users/all");
+        const res = await axios.get("https://jepairbackend.vercel.app/jepairbazaar/users/all");
         setUsers(res.data.users);
       } catch (error) {
         console.error("Error fetching users:", error);
