@@ -23,7 +23,7 @@ function Footer() {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:3000/jepairbazaar/payment"
+        "https://jepairbackend.onrender.com/jepairbazaar/payment"
       );
       if (response.status === 200) {
         window.location.href = response.data.url;
