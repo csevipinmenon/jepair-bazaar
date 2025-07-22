@@ -16,7 +16,7 @@ function SearchHome() {
   };
 
   return (
-    <div className="absolute z-20  left-3.5 lg:left-16 lg:top-80 top-56 shadow-2xl bg-[#415a6e93] py-3 lg:py-7 rounded-2xl border border-orange-500 overflow-hidden">
+    <div className=" hidden sm:block  absolute z-20  left-3.5 lg:left-16 lg:top-80 top-56 shadow-2xl bg-[#415a6e93] py-3 lg:py-7 rounded-2xl border border-orange-500 overflow-hidden">
       <form onSubmit={bookSearchFunction}>
         <div className="flex lg:px-16  px-2 lg:gap-x-14 gap-x-4 justify-evenly items-center ">
           <div>
