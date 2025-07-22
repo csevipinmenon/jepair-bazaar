@@ -32,7 +32,7 @@ function Feedback() {
     }
     try {
       setLoading(true); // Start loader
-      const url = "https://jepairbackend.vercel.app/jepairbazaar/feedback";
+      const url = "https://jepairbackend.onrender.com/jepairbazaar/feedback";
       const response = await fetch(url, {
         method: "POST",
         headers: {
