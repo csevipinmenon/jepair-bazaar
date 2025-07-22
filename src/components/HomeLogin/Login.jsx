@@ -73,7 +73,7 @@ function Login() {
       {showEmailotp && <Emailotp />}
       <div className="absolute sm:right-3 top-80 lg:right-20 lg:top-36 z-20 bg-white shadow-2xl rounded-2xl overflow-hidden ">
         <div className="mt-3">
-          <form className="py-5 sm:px-10" onSubmit={loginHomeFunction}>
+          <form className="py-5 px-5" onSubmit={loginHomeFunction}>
             <div className=" ">
               <label htmlFor="name" className="block font-bold  ">
                 Name
