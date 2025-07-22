@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const TypingEffect = () => {
   return (
-    <h3 className="top-50 absolute left-10 lg:left-32 lg:top-40 top-28 font-semibold lg:text-4xl  text-2xl text-white z-40">
+    <h3 className="top-80 absolute left-10 lg:left-32 lg:top-40 top-28 font-semibold lg:text-4xl  text-2xl text-white z-40">
       India’s Largest{" "}
       <span className="text-orange-500 lg:text-3xl text-2xl font-extrabold">
         <TypeAnimation
