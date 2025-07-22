@@ -85,7 +85,7 @@ function JepairBot() {
         updateBotReply("Welcome . Feel free to chat with me!😊");
         return;
       } else if (
-        question.includes("ceo of jepair ") ||
+        question.includes("ceo of jepair") ||
         question.includes("founder of jepair")
       ) {
         updateBotReply(
@@ -186,7 +186,7 @@ function JepairBot() {
   }
 
   return (
-    <div className="fixed right-4 top-16 shadow-2xl z-50 w-[430px] h-[510px]">
+    <div className="fixed right-4 top-16 shadow-2xl z-50 w-[400px] sm:w-[430px] h-[510px]">
       <div className="w-full h-full rounded-2xl bg-orange-100 shadow-2xl">
         {/* Header */}
         <div className="flex justify-between bg-blue-900 rounded-t-2xl text-white font-semibold p-3">
