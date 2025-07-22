@@ -38,7 +38,7 @@ function Books() {
     try {
       setLoading(true);
       await axios.delete(
-        `http://localhost:3000/jepairbazaar/order/cancel/${orderId}`
+        `https://jepairbackend.onrender.com/order/cancel/${orderId}`
       );
       handlerSuccess("Order cancelled successfully!");
 
