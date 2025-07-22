@@ -164,13 +164,7 @@ function Books() {
                         )}
                       </button>
                       <button className="mt-4 font-bold px-4 bg-[#2162a1]  hover:translate-y-1 transition-all text-white  hover:bg-orange-500 rounded-xl py-1.5">
-                        {loading ? (
-                          <div className="flex justify-center items-center">
-                            <div className="w-6 h-6 border-4 border-dashed rounded-full animate-spin border-white"></div>
-                          </div>
-                        ) : (
-                          "Update Book"
-                        )}
+                        Update Book
                       </button>
                     </div>
                   </div>
