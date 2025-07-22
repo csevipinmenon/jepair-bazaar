@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import io from "socket.io-client";
 import { useRef } from "react";
 
-const socket = io("https://jepairbackend.vercel.app/"); // Connect to backend
+const socket = io("https://jepairbackend.onrender.com/"); // Connect to backend
 
 function UserChat() {
   const { user } = useAuth0(); // get logged-in user's email
