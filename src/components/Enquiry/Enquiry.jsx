@@ -31,7 +31,7 @@ function Enquiry() {
     }
     try {
       setLoading(true); // Start loader
-      const url = "https://jepairbackend.vercel.app/jepairbazaar/enquiry";
+      const url = "https://jepairbackend.onrender.com/jepairbazaar/enquiry";
       const response = await fetch(url, {
         method: "POST",
         headers: {
