@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 
-const socket = io("https://jepairbackend.vercel.app/");
+const socket = io("https://jepairbackend.onrender.com/");
 
 function AdminChat() {
   const [selectedUser, setSelectedUser] = useState("");
