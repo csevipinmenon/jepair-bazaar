@@ -165,7 +165,7 @@ function JepairBot() {
         return;
       } else {
         const response = await axios.post(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${KEY}`,
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCU4FtZ3D4nFUh_BDy15QE1vKY5kCuY27M`,
           {
             contents: [{ parts: [{ text: question }] }],
           }
