@@ -65,7 +65,7 @@ function Mobileotp({ formData, setMobileotp }) {
         );
 
         try {
-          const url = "http://localhost:3000/jepairbazaar/order/book";
+          const url = "https://jepairbackend.onrender.com/jepairbazaar/order/book";
           const response = await fetch(url, {
             method: "POST",
             headers: {
