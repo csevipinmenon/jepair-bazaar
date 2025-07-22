@@ -35,7 +35,7 @@ function Mobileotp({ formData, setMobileotp }) {
     }
     try {
       setLoading(true);
-      const url = "https://jepairbackend.vercel.app/jepairbazaar/mobileotp/verify";
+      const url = "https://jepairbackend.onrender.com/jepairbazaar/mobileotp/verify";
       const response = await fetch(url, {
         method: "POST",
         headers: {
