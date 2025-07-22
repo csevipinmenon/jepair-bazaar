@@ -28,7 +28,7 @@ function UpdateStatus() {
 
     try {
       setLoading(true);
-      await axios.put(`https://jepairbackend.vercel.app/jepairbazaar/order/status/${id}`, {
+      await axios.put(`https://jepairbackend.onrender.com/jepairbazaar/order/status/${id}`, {
         status: status,
       });
 
