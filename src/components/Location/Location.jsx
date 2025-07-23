@@ -26,7 +26,7 @@ function Location() {
       const response = await fetch(`https://ipapi.co/${getIp}/json/`);
       const data = await response.json();
       setLoction(data);
-      console.log(data);
+      
     } catch (error) {
       console.log("something wrong during fetching the location", error);
     }
