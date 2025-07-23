@@ -4,7 +4,7 @@ import { ImAndroid } from "react-icons/im";
 
 function ChatPopup() {
   return (
-    <div className=" gap-3 fixed right-5 bottom-0 z-50 flex  justify-center items-center">
+    <div className=" gap-3 fixed right-5  bottom-12 sm:bottom-0 z-50 flex  justify-center items-center">
       <span className=" mt-1 bg-[#ffffff] shadow-2xl shadow-black px-5 text-[#1a3a71] font-semibold py-0.5 text-sm rounded-lg">
         Hello! How can I help? <br></br>{" "}
         <span className="text-[#333333] font-normal">JB's Assistance</span>
