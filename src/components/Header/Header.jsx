@@ -14,7 +14,7 @@ function Header() {
   //save user data
 
   //save user data
-  console.log(user);
+
 
   const [showSidenav, setShowSidenav] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
