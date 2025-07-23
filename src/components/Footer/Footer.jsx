@@ -10,6 +10,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
 import LoaderManual from "../Loader/LoaderManual.jsx";
 import { useState } from "react";
+import { IoLogoYoutube } from "react-icons/io";
+
 function Footer() {
   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
@@ -180,6 +182,11 @@ function Footer() {
           </div>
           <div className="flex gap-x-8 text-2xl mt-6 lg:mt-0 ml-16 lg:ml-0">
             <Link to={""}>
+              <span>
+                <IoLogoYoutube className="hover:text-[#11294c] " />
+              </span>
+            </Link>
+            <Link to={"https://youtube.com/@coderbanoo?si=qK6_ZpzrmqXF-Rj5"}>
               <span>
                 <TfiFacebook className="hover:text-[#11294c] " />
               </span>
