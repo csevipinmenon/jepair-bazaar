@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="w-full">
-      <div className="w-full">
+    <div className="w-full dark:bg-[#343a46] dark:text-[#f2f2f2]">
+      <div className="w-full ">
         <div className="w-full">
           <div className="flex justify-center items-center  w-full">
             
@@ -32,19 +32,19 @@ function About() {
             </div>
           </div>
           <div className=" mt-10 text-center">
-            <h3 className="font-extrabold text-3xl text-[#2d2e82] block">
+            <h3 className="font-extrabold text-3xl text-[#2d2e82] dark:text-[#f2f2f2] block">
               What is <span className="text-[#ff7f00]">Jepair</span>{" "}
-              <span className="text-[#2d2e82]"> Bazaar?</span>
+              <span className="text-[#2d2e82] dark:text-blue-300"> Bazaar?</span>
             </h3>
-            <div className="mt-7">
-              <p className="text-center font-semibold  lg:ml-52 lg:mr-52 ml-10 mr-10 leading-[2.5] text-[#2d2e82]">
+            <div className="mt-7 ">
+              <p className="text-center font-semibold  lg:ml-52 lg:mr-52 ml-10 mr-10 leading-[2.5] text-[#2d2e82] dark:text-[#f2f2f2] ">
                 As India’s largest service provider,{" "}
                 <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-                <span className="text-[#2d2e82] font-bold"> Bazaar</span> is one
+                <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar</span> is one
                 of the most trustable destinations for your Home Appliance
                 Repair Service. At{" "}
                 <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-                <span className="text-[#2d2e82] font-bold"> Bazaar</span> we
+                <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar</span> we
                 have a team of experienced technicians who visit your location
                 and repair your home appliance at your doorstep. We service and
                 repair a wide range of home appliances which contains AC Repair
@@ -53,11 +53,10 @@ function About() {
                 Repair Service, RO Repair Service, CCTV Repair Service, and many
                 more. Along with home appliance repair and services.We also deal
                 in Cleaning and Pest Control services like Pest Control, Car
-                Wash, Kitchen Cleaning, Carpet Cleaning, House Cleaning, Sofa
                 Cleaning, Bathroom Cleaning, and Water Tank Cleaning. In
                 Contractor Services,{" "}
                 <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-                <span className="text-[#2d2e82] font-bold"> Bazaar</span> deals
+                <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar</span> deals
                 in Interior Design, Carpet Flooring, Steel Railing, False
                 Ceiling, House Construction, and Painting Contractor. Now Jepair
                 Bazar also provides Beauty, Spa, Bridal Make-Up Service, laundry
@@ -80,12 +79,12 @@ function About() {
             </div>
             <img src="" />
           </div>
-          <div className="mt-10 text-center border border-t-2">
-            <h3 className="font-extrabold text-3xl text-[#2d2e82] block  mt-7">
+          <div className="mt-10 text-center border border-t-2 dark:border-gray-800">
+            <h3 className="font-extrabold text-3xl text-[#2d2e82] dark:text-blue-300 block  mt-7 ">
               Why a <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-              <span className="text-[#2d2e82] font-bold"> Bazaar?</span>
+              <span className="text-[#2d2e82]  dark:text-blue-300 font-bold"> Bazaar?</span>
             </h3>
-            <p className="mt-7 font-semibold lg:ml-52 lg:mr-52 ml-10 mr-10 leading-[2.5] text-[#2d2e82] mb-6">
+            <p className="mt-7 font-semibold lg:ml-52 lg:mr-52 ml-10 mr-10 leading-[2.5] text-[#2d2e82] dark:text-[#f2f2f2] mb-6">
               We throw away vast amounts of stuff. Even things with almost
               nothing wrong, and which could get a new lease on life after a
               simple repair. The trouble is, lots of people have forgotten that
@@ -95,7 +94,7 @@ function About() {
               to the circular economy, in which raw materials can be reused
               again and again. That’s why there’s a{" "}
               <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-              <span className="text-[#2d2e82] font-bold"> Bazaar</span>! People
+              <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar</span>! People
               with repair skills get the appreciation they deserve. Invaluable
               practical skills are passed on. Things are being used for longer
               and don’t have to be thrown away. This reduces the volume of raw
@@ -103,14 +102,14 @@ function About() {
               emissions, for example, because manufacturing new products and
               recycling old ones causes CO2 to be released. The{" "}
               <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-              <span className="text-[#2d2e82] font-bold"> Bazaar </span>
+              <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar </span>
               teaches people to see their possessions in a new light. And, once
               again, to appreciate their value.This is essential to kindle
               people’s enthusiasm for a sustainable society.
             </p>
           </div>
           <div className="mt-10 text-center">
-            <h3 className="font-extrabold text-3xl text-[#2d2e82] block ">
+            <h3 className="font-extrabold text-3xl text-[#2d2e82]  dark:text-blue-300 block ">
               Who thought up the idea?
             </h3>
             <div className="flex overflow-hidden justify-between  mt-10">
@@ -150,22 +149,22 @@ function About() {
             </div>
             <p></p>
           </div>
-          <div className="mt-11 text-center border border-t-2">
-            <h3 className="font-extrabold text-3xl text-[#2d2e82] block mt-7 ">
+          <div className="mt-11 text-center border border-t-2 dark:border-gray-800">
+            <h3 className="font-extrabold text-3xl text-[#2d2e82] dark:text-blue-300 block mt-7 ">
               Worldwide movement!
             </h3>
-            <p className="mt-10 mb-7 font-semibold lg:ml-52 lg:mr-52 ml-10 mr-10 leading-[2.5] text-[#2d2e82]">
+            <p className="mt-10 mb-7 font-semibold lg:ml-52 lg:mr-52 ml-10 mr-10 leading-[2.5] text-[#2d2e82] dark:text-[#f2f2f2]">
               <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-              <span className="text-[#2d2e82] font-bold"> Bazaar</span>,
+              <span className="text-[#2d2e82]  dark:text-blue-300 font-bold"> Bazaar</span>,
               meanwhile, form a worldwide movement that strives to preserve
               repair skills in society and to promote more repairable products.
               Besides India, there are{" "}
               <span className="text-[#ff7f00] font-bold">Jepair</span>{" "}
-              <span className="text-[#2d2e82] font-bold"> Bazaar</span> in
+              <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar</span> in
               Belgium, Germany, France, the United Kingdom, the United States
               and in dozens of other countries around the world.{" "}
               <span className="text-[#ff7f00] font-bold">Jepair</span>
-              <span className="text-[#2d2e82] font-bold"> Bazaar </span>
+              <span className="text-[#2d2e82] dark:text-blue-300 font-bold"> Bazaar </span>
               has even made its way to India and Japan!
             </p>
           </div>
