@@ -138,12 +138,12 @@ function BookProcess() {
         <Mobileotp formData={formData} setMobileotp={setMobileotp} />
       )}
       
-      <div className="flex justify-center bg-[#f2f2f2] items-center ">
+      <div className="flex justify-center bg-[#f2f2f2] dark:bg-[#343a46] items-center ">
         
         <img src="book.jpg" className="h-[350px] bg-cover bg-white w-auto  shadow-xl shadow-blue-400 rounded-2xl" />
       </div>
-      <div className="bg-[#f2f2f2]  flex items-end justify-center p-10 lg:p-0 ">
-        <div className=" bg-white  border border-blue-500 shadow-2xl  py-16 lg:px-32 rounded-3xl mt-10 mb-16 ">
+      <div className="bg-[#f2f2f2] dark:bg-[#343a46]  flex items-end justify-center p-10 lg:p-0 ">
+        <div className=" bg-white dark:bg-gray-800 dark:text-white border border-blue-500 shadow-2xl  py-16 lg:px-32 rounded-3xl mt-10 mb-16 ">
           <h2 className="text-center font-bold text-4xl text-orange-500 animate-pulse ">
             Book <span className="text-blue-500">Now </span>
           </h2>
@@ -160,7 +160,7 @@ function BookProcess() {
                 name="name"
                 value={user?.name}
                 placeholder="Enter your name"
-                className="w-full border border-orange-400  px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border border-orange-400  dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
               />
             </div>
 
@@ -176,7 +176,7 @@ function BookProcess() {
                 onChange={handleChange}
                 maxLength={10}
                 placeholder="Enter your phone number"
-                className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border border-orange-400 dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
               />
             </div>
             <div className="mt-4">
@@ -191,7 +191,7 @@ function BookProcess() {
                 readOnly
                 value={user?.email}
                 placeholder="Enter your email"
-                className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border border-orange-400  dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
               />
             </div>
             <div className="max-w-md mx-auto border p-4 rounded shadow border-blue-500 mt-6">
@@ -200,7 +200,7 @@ function BookProcess() {
               </span>
               <button
                 type="button"
-                className="bg-orange-500 hover:bg-blue-500 text-white px-3  ml-7 py-1.5 rounded text-sm mb-4 animate-pulse"
+                className="bg-orange-500 hover:bg-blue-500  text-white px-3  ml-7 py-1.5 rounded text-sm mb-4 animate-pulse"
                 onClick={handleAutoFill}
                 disabled={loading}
               >
@@ -213,7 +213,7 @@ function BookProcess() {
                   name="town"
                   value={formData.town}
                   onChange={handleChange}
-                  className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                  className="w-full border border-orange-400 dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
                   required
                 >
                   <option value="" disabled>
@@ -233,7 +233,7 @@ function BookProcess() {
                   name="state"
                   value={formData.state}
                   onChange={handleChange}
-                  className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                  className="w-full border border-orange-400 dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
                   required
                 >
                   <option value="" disabled>
@@ -260,7 +260,7 @@ function BookProcess() {
                   maxLength={6}
                   required
                   placeholder="Enter your pincode"
-                  className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                  className="w-full border border-orange-400  dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
                 />
               </div>
 
@@ -276,7 +276,7 @@ function BookProcess() {
                   onChange={handleChange}
                   required
                   placeholder="Chiraiyatand Main Road, Prithvipur, Chiraiyatand"
-                  className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                  className="w-full border border-orange-400 dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
                 />
               </div>
 
@@ -290,7 +290,7 @@ function BookProcess() {
             <div className="mt-4">
               <label className="block font-bold">Services</label>
               <select
-                className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border border-orange-400 px-2 dark:bg-gray-800 py-1.5 focus:outline-1 focus:outline-blue-500"
                 required
                 name="service"
                 value={formData.service}
@@ -321,7 +321,7 @@ function BookProcess() {
                 name="date"
                 value={formData.date}
                 onChange={handleChange}
-                className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border dark:bg-gray-800 border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
               />
             </div>
             <div className="mt-4">
@@ -335,7 +335,7 @@ function BookProcess() {
                 name="time"
                 value={formData.time}
                 onChange={handleChange}
-                className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border dark:bg-gray-800 dark:text-white border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
               />
             </div>
             <div className="mt-4 ">
@@ -348,7 +348,7 @@ function BookProcess() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full border border-orange-400 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
+                className="w-full border border-orange-400  dark:bg-gray-800 px-2 py-1.5 focus:outline-1 focus:outline-blue-500"
                 placeholder="Enter your message: eg-Please come early."
               ></textarea>
             </div>
