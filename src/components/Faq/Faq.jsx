@@ -40,16 +40,16 @@ function Faq() {
 
   return (
     <>
-      <div className="w-full mt-10 flex justify-center items-center mb-4">
-        <div className="border w-full max-w-5xl p-5">
-          <h1 className="text-center text-5xl font-bold text-orange-400 hover:underline border-b py-4">
+      <div className="w-full  flex justify-center items-center py-8 dark:bg-[#343a46]">
+        <div className="border w-full max-w-5xl p-5 dark:border-blue-800">
+          <h1 className="text-center text-5xl font-bold text-orange-400 hover:underline border-b dark:border-blue-800 py-4">
             FAQ'S
           </h1>
 
           {faqData.map((faq, index) => (
             <div
               key={index}
-              className="mt-6 border-b pb-4 transition-all duration-300"
+              className="mt-6 border-b dark:border-blue-800 pb-4 transition-all duration-300"
             >
               <div
                 className="flex items-center justify-between cursor-pointer text-[#31708f] hover:text-blue-300 px-4"
@@ -66,18 +66,18 @@ function Faq() {
                   openIndex === index ? "max-h-40 mt-3" : "max-h-0"
                 }`}
               >
-                <p className="text-gray-700">{faq.answer}</p>
+                <p className="text-gray-700 dark:text-white">{faq.answer}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="w-full mb-20 flex justify-center items-center">
+      <div className="w-full dark:bg-[#343a46] py-5 flex justify-center items-center">
         <div className="w-full max-w-5xl border p-4 bg-[#f68020] rounded">
           <h2 className="text-center text-white font-bold text-2xl">
             Other Services for You
           </h2>
-          <div className="text-center mt-3 bg-white rounded flex justify-around items-center ">
+          <div className="text-center mt-3 bg-white   rounded flex justify-around items-center ">
             <Link to={"/"} className="">
               <img src="ac1.jpg" height={200} width={100} className="" />
             </Link>
