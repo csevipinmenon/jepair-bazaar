@@ -15,7 +15,7 @@ function Books() {
   if (!isAuthenticated) {
     loginWithRedirect();
   }
-  console.log(orders);
+ 
 
   //  Fetch all orders for this user
   useEffect(() => {
@@ -27,7 +27,7 @@ function Books() {
         setOrders(response.data.orders); //  backend should return orders array
       } catch (error) {
         handlerError("Error Fetching Orders!");
-        console.error("Error fetching orders:", error);
+       
       }
     };
     if (user?.email) fetchOrders();
@@ -48,7 +48,7 @@ function Books() {
       // Remove from UI
       setOrders((prev) => prev.filter((o) => o._id !== orderId));
     } catch (error) {
-      console.error("Error cancelling order:", error);
+      
       handlerError("Failed to Cancel Order!");
       alert("Failed to cancel order.");
     } finally {
