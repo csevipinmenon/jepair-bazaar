@@ -101,7 +101,7 @@ function UserChat() {
         <div className="flex gap-2 mb-36 mt-12">
           <input
             type="text"
-            className="border p-2 w-full focus:outline-none  border-blue-500 dark:bg-gray-800   rounded-lg focus:border-orange-500"
+            className="border p-2 w-full focus:outline-none  border-blue-500 dark:bg-gray-800  dark:text-white  rounded-lg focus:border-orange-500"
             placeholder="Type your message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
