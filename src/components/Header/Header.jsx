@@ -33,8 +33,8 @@ function Header() {
   };
 
   return (
-    <header className="shadow-lg z-50  sticky top-0 lg:m-4 dark:m-0">
-      <nav className="bg-white border-gray-300 px-4 lg:px-6 py-2.5 dark:bg-[#343a46] dark:text-white">
+    <header className="shadow-lg z-50  sticky top-0 lg:m-4 dark:m-0 dark:bg-[#343a46]">
+      <nav className="bg-white border-gray-300 px-4 lg:px-6 py-2.5  dark:bg-[#343a46] dark:text-white">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link
             to="/"
@@ -177,7 +177,7 @@ function Header() {
           id="mobile-menu"
         >
           <ul className=" flex flex-col mt-6 font-medium gap-6 p-4">
-            <li className="hover:bg-[#3a76cb] p-2 dark:text-white hover:rounded-md bg-orange-400 rounded-md">
+            <li className=" p-2 dark:text-white hover:rounded-md  rounded-md">
               <NavLink
                 to={"/"}
                 onClick={() => {
@@ -187,13 +187,13 @@ function Header() {
                 className={({ isActive }) =>
                   `font-bold ${
                     isActive ? "text-orange-400" : "text-black"
-                  }  text-white font-bold`
+                  }  text-white font-bold bg-orange-400 hover:bg-[#3a76cb] rounded-xl  px-28 sm:px-44 py-2.5`
                 }
               >
                 Home
               </NavLink>
             </li>
-            <li className="hover:bg-[#3a76cb] p-2 dark:text-white hover:rounded-md bg-orange-400 rounded-md">
+            <li className=" p-2 dark:text-white hover:rounded-md  rounded-md">
               <NavLink
                 to={"/visit"}
                 onClick={() => {
@@ -203,13 +203,13 @@ function Header() {
                 className={({ isActive }) =>
                   `font-bold ${
                     isActive ? "text-orange-400" : "text-black"
-                  }  text-white font-bold `
+                  }  text-white font-bold bg-orange-400 hover:bg-[#3a76cb] rounded-xl  px-28 sm:px-44 py-2.5 `
                 }
               >
-                Visit
+                <span className="px-2"> Visit</span>
               </NavLink>
             </li>
-            <li className="hover:bg-[#3a76cb] p-2 dark:text-white hover:rounded-md bg-orange-400 rounded-md">
+            <li className=" p-2 dark:text-white hover:rounded-md  rounded-md">
               <NavLink
                 to={"/about"}
                 onClick={() => {
@@ -219,13 +219,13 @@ function Header() {
                 className={({ isActive }) =>
                   `font-bold ${
                     isActive ? "text-orange-400" : "text-black"
-                  } text-white  font-bold`
+                  } text-white  font-bold bg-orange-400 hover:bg-[#3a76cb] rounded-xl  px-28 sm:px-44 py-2.5`
                 }
               >
                 About
               </NavLink>
             </li>
-            <li className="hover:bg-[#3a76cb] p-2 dark:text-white hover:rounded-md bg-orange-400 rounded-md">
+            <li className=" p-2 dark:text-white hover:rounded-md  rounded-md">
               <NavLink
                 to={"/enquiry"}
                 onClick={() => {
@@ -235,13 +235,13 @@ function Header() {
                 className={({ isActive }) =>
                   `font-bold ${
                     isActive ? "text-orange-400" : "text-black"
-                  }  text-white`
+                  }  text-white font-bold bg-orange-400 hover:bg-[#3a76cb] rounded-xl  px-24 sm:px-40 py-2.5`
                 }
               >
-                Enquiry
+                <span className="px-3"> Enquiry</span>
               </NavLink>
             </li>
-            <li className="hover:bg-[#3a76cb] p-2 dark:text-white hover:rounded-md bg-orange-400 rounded-md">
+            <li className=" p-2 dark:text-white hover:rounded-md  rounded-md">
               <NavLink
                 to={"/feedback"}
                 onClick={() => {
@@ -251,10 +251,10 @@ function Header() {
                 className={({ isActive }) =>
                   `font-bold ${
                     isActive ? "text-orange-400" : "text-black"
-                  }  text-white font-bold`
+                  }  text-white font-bold bg-orange-400 hover:bg-[#3a76cb] rounded-xl  px-24 sm:px-40 py-2.5`
                 }
               >
-                FeedBack
+                <span className="px-2"> Feedback</span>
               </NavLink>
             </li>
           </ul>
