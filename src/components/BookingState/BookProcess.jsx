@@ -51,7 +51,7 @@ function BookProcess() {
           );
           const data = await res.json();
           const address = data.address;
-          console.log(data);
+          
 
           setFormData({
             town: address.city || address.town || address.village || "",
@@ -116,7 +116,7 @@ function BookProcess() {
         body: JSON.stringify({ phone: `+91${formData.phone}` }),
       });
       const result = await response.json();
-      console.log(result);
+     
       const { success, message, error } = result;
       if (success) {
         setMobileotp(true);
