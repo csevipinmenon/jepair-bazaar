@@ -11,11 +11,10 @@ function Visit() {
     console.log(city);
   };
   return (
-    <div className="w-full ">
+    <div className="w-full dark:bg-[#343a46] dark:text-[#f2f2f2]">
       <div className="w-full">
         <div className="w-full flex justify-center items-center ">
-          
-          <img src="visit.png" className="w-auto h-[300px]" />
+          <img src="visit.png" className="w-auto h-[300px] rounded-2xl dark:shadow-lg dark:shadow-blue-400 " />
         </div>
         <div className="overflow-hidden mt-4 border border-t-2">
           <MapComponent />
@@ -27,8 +26,8 @@ function Visit() {
             </h3>
           </div>
         </div>
-        <div className="w-full bg-[#f2f2f2] p-10 flex justify-center ">
-          <form onSubmit={searchJepair}>
+        <div className="w-full bg-[#f2f2f2] dark:bg-[#343a46] dark:text-[#f2f2f2] p-10 flex justify-center items-center ">
+          <form onSubmit={searchJepair} className="text-center">
             <label
               htmlFor="city"
               className="block font-bold text-blue-500 mb-3 text-xl"
@@ -40,11 +39,11 @@ function Visit() {
               id="city"
               name="city"
               required
-              className="lg:px-60 py-2.5 mr-8 bg-[#f2f2ff] rounded focus:outline-orange-400 border border-blue-300 px-20 "
+              className="lg:px-60 py-2.5 sm:mr-8 bg-[#f2f2ff] rounded focus:outline-orange-400 border border-blue-300 px-20 "
             />
             <button
               type="submit"
-              className="bg-[#ff7f00] px-20 py-2.5 font-bold text-xl text-white rounded-md lg:mt-0 mt-6 hover:bg-[#3a76cb]"
+              className="bg-[#ff7f00]  px-20 py-2.5 font-bold text-xl text-white rounded-md lg:mt-0 mt-6 hover:bg-[#3a76cb]"
             >
               Search
             </button>
