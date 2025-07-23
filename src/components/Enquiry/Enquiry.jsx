@@ -61,27 +61,27 @@ function Enquiry() {
     }
   };
   return (
-    <div>
-      <div>
+    <div className="">
+      <div className="">
         {showEmailotp && <Emailotp />}
-        <div className="w-full flex justify-center items-center bg-[#f2f2f2]">
+        <div className="w-full flex justify-center items-center bg-[#f2f2f2] dark:bg-[#343a46]  dark:text-[#f2f2f2] ">
           <h1 className=" absolute text-center  text-5xl font-extrabold   animate-bounce md:top-96 md:left-[700px] top-40 shadow-blue-500  text-[#ff7f00]">
           Enquiry
         </h1>
           
           <img src="enquiry.png" className="h-[350px] w-auto rounded-lg shadow-xl shadow-blue-200 mb-10" />
         </div>
-        <div className="flex justify-center items-center  rounded-2xl mb-40 shadow-xl">
+        <div className="flex justify-center items-center    shadow-xl dark:bg-[#343a46]  dark:text-[#f2f2f2] ">
           <form
             onSubmit={enquiryFunction}
-            className="bg-[#f2f2f2] w-full h-full rounded-lg "
+            className="bg-[#f2f2f2] w-full h-full rounded-lg dark:bg-[#343a46]  dark:text-[#f2f2f2] "
           >
-            <div className="mt-10 flex gap-x-3 justify-center items-center">
+            <div className="mt-10 flex gap-x-3 justify-center items-center  ">
               <h1 className="bg-[#3a76cb] py-6  px-24 lg:px-52 text-center rounded text-white font-bold text-xl">
                 Post Your Requirements
               </h1>
             </div>
-            <div className="mt-6 flex gap-x-3 justify-center items-center">
+            <div className="mt-6 flex  gap-x-2 sm:gap-x-3 justify-center items-center">
               <input
                 type="text"
                 placeholder="Enter your name"
@@ -89,7 +89,7 @@ function Enquiry() {
                 onChange={handleChange}
                 value={enquiryInfo.name}
                 autoFocus
-                className="py-2.5  px-2 lg:px-16 border border-blue-400 focus:outline-none rounded"
+                className="py-2.5 px-1  lg:px-16 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
                 required
               />
               <input
@@ -98,7 +98,7 @@ function Enquiry() {
                 name="phone"
                 onChange={handleChange}
                 value={enquiryInfo.phone}
-                className="py-2.5 px-2 lg:px-16 border border-blue-400 focus:outline-none rounded"
+                className="py-2.5 px-1 md:px-16 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
                 required
               />
             </div>
@@ -110,7 +110,7 @@ function Enquiry() {
                 name="email"
                 onChange={handleChange}
                 value={enquiryInfo.email}
-                className="py-2.5 px-28 lg:px-56 border border-blue-400 focus:outline-none rounded"
+                className="py-2.5 px-16 md:px-56 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
               />
             </div>
             <div className="flex justify-center items-center mt-4 ">
@@ -118,7 +118,7 @@ function Enquiry() {
                 placeholder="Message"
                 rows={10}
                 cols={54}
-                className="border border-blue-400  lg:px-28 py-2.5"
+                className="border border-blue-400  dark:bg-gray-800 dark:text-[#f2f2f2] md:px-28 py-2.5"
                 required
                 name="message"
                 onChange={handleChange}
@@ -129,7 +129,7 @@ function Enquiry() {
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-[#3a76cb] text-white py-3 px-44 lg:px-72 font-bold text-xl rounded hover:bg-orange-400 shadow-2xl"
+                className="bg-[#3a76cb] text-white py-3 px-32 md:px-72 font-bold text-xl  rounded hover:bg-orange-400 shadow-2xl"
               >
                 {loading ? (
                   <div className="flex justify-center items-center">
