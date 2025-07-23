@@ -9,6 +9,8 @@ function Books() {
   const { user, loginWithRedirect, isAuthenticated } = useAuth0();
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [loadingOrderId, setLoadingOrderId] = useState(null);
+
 
   if (!isAuthenticated) {
     loginWithRedirect();
@@ -37,7 +39,7 @@ function Books() {
     if (!confirmed) return;
 
     try {
-      setLoading(true);
+      setLoadingOrderId(orderId);
       await axios.delete(
         `https://jepairbackend.onrender.com/order/cancel/${orderId}`
       );
@@ -50,7 +52,7 @@ function Books() {
       handlerError("Failed to Cancel Order!");
       alert("Failed to cancel order.");
     } finally {
-      setLoading(false);
+      setLoadingOrderId(null);
     }
   };
 
@@ -158,13 +160,14 @@ function Books() {
                         onClick={() => orderCancel(order._id)}
                         className="mt-4 font-bold bg-[#2162a1] hover:-translate-y-1 transition-all text-white hover:bg-orange-500 px-4  py-1.5 rounded-lg"
                       >
-                        {loading ? (
-                          <div className="flex justify-center items-center">
-                            <div className="w-6 h-6 border-4 border-dashed rounded-full animate-spin border-white"></div>
-                          </div>
-                        ) : (
-                          "Cancel Book"
-                        )}
+                        {loadingOrderId === order._id ? (
+                       <div className="flex justify-center items-center">
+                      <div className="w-6 h-6 border-4 border-dashed rounded-full animate-spin border-white"></div>
+                     </div>
+                     ) : (
+                         "Cancel Book"
+                          )}
+
                       </button>
                       <button className="mt-4 font-bold px-4 bg-[#2162a1]  hover:translate-y-1 transition-all text-white  hover:bg-orange-500 rounded-xl py-1.5">
                         Update Book
