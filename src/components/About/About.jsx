@@ -143,7 +143,7 @@ function About() {
                   className="rounded-xl shadow-lg hover:translate-y-1.5"
                 />
                 <h3 className="mt-3 font-bold text-[#ff7f00]">
-                  Mr. Vishal Kumar
+                  Mr. Vishal Arya
                 </h3>
               </div>
             </div>
