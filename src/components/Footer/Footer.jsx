@@ -184,7 +184,7 @@ function Footer() {
                 <TfiFacebook className="hover:text-[#11294c] " />
               </span>
             </Link>
-            <Link to={"https://www.instagram.com/imvipin07/"}>
+            <Link to={"https://www.instagram.com/jepair_bazaar "}>
               <span>
                 <GrInstagram className="hover:text-[#11294c] " />
               </span>
