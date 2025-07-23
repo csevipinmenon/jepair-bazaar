@@ -181,12 +181,12 @@ function Footer() {
             <p>2025 Jepair Bazzar . All Right Reserved</p>
           </div>
           <div className="flex gap-x-8 text-2xl mt-6 lg:mt-0 ml-16 lg:ml-0">
-            <Link to={""}>
+            <Link to={"https://youtube.com/@coderbanoo?si=qK6_ZpzrmqXF-Rj5"}>
               <span>
                 <IoLogoYoutube className="hover:text-[#11294c] " />
               </span>
             </Link>
-            <Link to={"https://youtube.com/@coderbanoo?si=qK6_ZpzrmqXF-Rj5"}>
+            <Link to={""}>
               <span>
                 <TfiFacebook className="hover:text-[#11294c] " />
               </span>
