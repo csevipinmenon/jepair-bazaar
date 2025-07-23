@@ -81,7 +81,7 @@ function Enquiry() {
                 Post Your Requirements
               </h1>
             </div>
-            <div className="mt-6 flex  gap-x-2 sm:gap-x-3 justify-center items-center">
+            <div className="mt-6 flex   sm:gap-x-3 justify-center items-center">
               <input
                 type="text"
                 placeholder="Enter your name"
