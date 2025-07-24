@@ -51,9 +51,9 @@ function UserChat() {
 
   return (
     <>
-      <div className="w-full flex justify-center items-center py-2 ">
+      <div className="w-full flex justify-center items-center py-7 dark:bg-[#343a46] ">
        
-        <img src="chat3.jpg" className="h-[3500px] rounded-lg shadow-lg shadow-blue-400 w-auto" />
+        <img src="chat3.jpg" className="h-[350px] rounded-lg shadow-lg shadow-blue-400 w-auto" />
       </div>
       <div className="p-4  dark:bg-[#343a46]">
         <h2 className="text-3xl shadow-lg border-b-2 border-dashed py-4    text-blue-500 border-orange-500 font-extrabold mb-2 text-center">
