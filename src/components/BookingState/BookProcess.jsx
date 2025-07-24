@@ -147,7 +147,7 @@ function BookProcess() {
           <h2 className="text-center font-bold text-4xl text-orange-500 animate-pulse ">
             Book <span className="text-blue-500">Now </span>
           </h2>
-          <form className="py-5 px-10" onSubmit={bookServicFunction}>
+          <form className="py-5 px-5 sm:px-10" onSubmit={bookServicFunction}>
             <div className=" ">
               <label htmlFor="name" className="block font-bold  ">
                 Name
