@@ -65,7 +65,7 @@ function Enquiry() {
       <div className="">
         {showEmailotp && <Emailotp />}
         <div className="w-full flex justify-center items-center bg-[#f2f2f2] dark:bg-[#343a46]  dark:text-[#f2f2f2] ">
-          <h1 className=" absolute text-center  text-5xl font-extrabold   animate-bounce md:top-96 md:left-[700px] top-40 shadow-blue-500  text-[#ff7f00]">
+          <h1 className=" absolute text-center  text-5xl font-extrabold   animate-bounce md:top-96 md:left-[700px] top-80 shadow-blue-500  text-[#ff7f00]">
           Enquiry
         </h1>
           
