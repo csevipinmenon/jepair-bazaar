@@ -77,7 +77,7 @@ function Footer() {
               }}
             >
               <p className="font-semibold hover:text-[#e97100] mt-3">
-                Community
+                Our Team
               </p>
             </Link>
           </div>
