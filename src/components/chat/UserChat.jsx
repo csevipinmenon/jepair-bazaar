@@ -51,11 +51,9 @@ function UserChat() {
 
   return (
     <>
-      <div className="w-full flex justify-center items-center shadow-lg ">
-        <h1 className="absolute text-3xl text-[#3a76cb]   font-extrabold ">
-          Welcome To Chat!
-        </h1>
-        <img src="jepairBanner.jpg" className="h-[200px] w-full" />
+      <div className="w-full flex justify-center items-center py-2 ">
+       
+        <img src="chat3.jpg" className="h-[3500px] rounded-lg shadow-lg shadow-blue-400 w-auto" />
       </div>
       <div className="p-4  dark:bg-[#343a46]">
         <h2 className="text-3xl shadow-lg border-b-2 border-dashed py-4    text-blue-500 border-orange-500 font-extrabold mb-2 text-center">
