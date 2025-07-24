@@ -73,7 +73,7 @@ function Login() {
       {showEmailotp && <Emailotp />}
       <div className="absolute sm:right-3 top-80 lg:right-20 lg:top-36 z-20 bg-white shadow-2xl rounded-2xl overflow-hidden ">
         <div className="mt-3">
-          <form className="py-5 px-5" onSubmit={loginHomeFunction}>
+          <form className="py-5 px-2  sm:px-5" onSubmit={loginHomeFunction}>
             <div className=" ">
               <label htmlFor="name" className="block font-bold  ">
                 Name
@@ -135,7 +135,7 @@ function Login() {
               ></textarea>
             </div>
             <ReCAPTCHA className="mt-2 "
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              sitekey="6Lc5DY4rAAAAAKIGK9ge6-jwQyJ_oZDr0IlyTp3N"
               onChange={recaptchFunction}
             />
             <div>
