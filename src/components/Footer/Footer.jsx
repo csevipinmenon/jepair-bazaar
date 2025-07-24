@@ -186,7 +186,7 @@ function Footer() {
                 <IoLogoYoutube className="hover:text-[#11294c] " />
               </span>
             </Link>
-            <Link to={""}>
+            <Link to={"https://www.facebook.com/profile.php?id=61578378850913"}>
               <span>
                 <TfiFacebook className="hover:text-[#11294c] " />
               </span>
