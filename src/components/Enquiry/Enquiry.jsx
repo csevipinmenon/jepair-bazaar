@@ -81,7 +81,7 @@ function Enquiry() {
                 Post Your Requirements
               </h1>
             </div>
-            <div className="mt-6 flex   sm:gap-x-3 justify-center items-center">
+           <div className="mt-6 flex flex-col md:flex-row gap-y-4 md:gap-y-0 md:gap-x-3 justify-center items-center">
               <input
                 type="text"
                 placeholder="Enter your name"
@@ -89,7 +89,7 @@ function Enquiry() {
                 onChange={handleChange}
                 value={enquiryInfo.name}
                 autoFocus
-                className="py-2.5 px-1  lg:px-16 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
+                className="py-2.5 px-1  lg:px-12 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
                 required
               />
               <input
@@ -98,7 +98,7 @@ function Enquiry() {
                 name="phone"
                 onChange={handleChange}
                 value={enquiryInfo.phone}
-                className="py-2.5 px-1 md:px-16 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
+                className="py-2.5 px-1 md:px-14 border dark:bg-gray-800 dark:text-white border-blue-400 focus:outline-none rounded"
                 required
               />
             </div>
