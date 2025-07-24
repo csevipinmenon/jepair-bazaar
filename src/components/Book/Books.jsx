@@ -78,7 +78,7 @@ function Books() {
                 key={order._id}
                 className="md:w-[900px] w-full bg-[#f2f2f2] border-2 shadow rounded-xl dark:border-blue-500 dark:bg-gray-800"
               >
-                <div className="flex justify-between bg-gray-200 px-3 py-5 rounded-lg  dark:text-white dark:bg-gray-800">
+                <div className="flex justify-between bg-gray-200 sm:px-3 py-5 rounded-lg  dark:text-white dark:bg-gray-800">
                   <div>
                     <h3 className="font-bold">Book Placed</h3>
 
