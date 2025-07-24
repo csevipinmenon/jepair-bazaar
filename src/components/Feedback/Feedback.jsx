@@ -72,7 +72,7 @@ function Feedback() {
       {/* feedback section */}
 
       <div className="flex justify-center items-center   bg-[#f2f2f2] dark:bg-[#343a46]">
-        <div className="inline bg-white  dark:bg-gray-800 mt-20 py-14  px-10 lg:px-48 shadow-2xl rounded-3xl mb-32 lg:mr-0 lg:ml-0 ml-8 mr-8">
+        <div className="inline bg-white  dark:bg-gray-800 mt-20 py-14  px-5 sm:px-48 shadow-2xl rounded-3xl mb-32 lg:mr-0 lg:ml-0 ml-8 mr-8">
           <form onSubmit={feedbackFunction}>
             <h3 className="font-bold text-4xl">Contact Us</h3>
             <p className="mt-2  text-sm font-sans">
