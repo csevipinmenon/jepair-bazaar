@@ -59,9 +59,7 @@ function Books() {
   return (
     <>
       <div className="w-full flex justify-center items-center ">
-        <h1 className="absolute text-5xl text-[#3a76cb]   animate-pulse font-extrabold ">
-          Your Booking
-        </h1>
+        
         <img src="book2.jpg" className="h-[400px] rounded-lg shadow-lg shadow-blue-400 w-auto" />
       </div>
       <div className="py-20 dark:bg-[#343a46]">
