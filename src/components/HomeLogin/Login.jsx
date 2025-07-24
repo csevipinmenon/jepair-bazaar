@@ -135,7 +135,7 @@ function Login() {
               ></textarea>
             </div>
             <ReCAPTCHA className="mt-2 "
-              sitekey="6Lc5DY4rAAAAAKIGK9ge6-jwQyJ_oZDr0IlyTp3N"
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
               onChange={recaptchFunction}
             />
             <div>
