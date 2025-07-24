@@ -58,7 +58,7 @@ function Books() {
 
   return (
     <>
-      <div className="w-full flex justify-center items-center ">
+      <div className="w-full flex justify-center dark:bg-[#343a46] py-7  items-center ">
         
         <img src="book2.jpg" className="h-[400px] rounded-lg shadow-lg shadow-blue-400 w-auto" />
       </div>
