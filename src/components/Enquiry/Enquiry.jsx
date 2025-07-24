@@ -118,7 +118,7 @@ function Enquiry() {
                 placeholder="Message"
                 rows={10}
                 cols={40}
-                className="border border-blue-400 px-2  dark:bg-gray-800 rounded-md dark:text-[#f2f2f2] md:px-36 py-2.5"
+                className="border border-blue-400 px-2  focus:outline-none dark:bg-gray-800 rounded-md dark:text-[#f2f2f2] md:px-36 py-2.5"
                 required
                 name="message"
                 onChange={handleChange}
