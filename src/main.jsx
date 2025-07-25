@@ -29,7 +29,7 @@ import UpdateStatus from "./components/updateOrderStatus/UpdateStatus.jsx";
 import AdminUsers from "./components/admin/GetAllUsers.jsx";
 import TermCondition from "./components/termAndCondition/TermCondition.jsx";
 import PrivacyPolicy from "./components/privacyPolicy/PrivacyPolicy.jsx";
-import Team from "./components/ourteam/Team.jsx";
+
 
 
 const router = createBrowserRouter(
@@ -52,7 +52,7 @@ const router = createBrowserRouter(
       <Route path="allusers" element={<AdminUsers />} />
       <Route path="termcondition" element={<TermCondition/>}/>
       <Route path="privacypolicy" element={<PrivacyPolicy/>}/>
-      <Route path="ourteam" element={<Team/>}/>
+    
 
       <Route
         path="*"
